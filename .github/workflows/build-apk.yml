@@ -67,7 +67,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TURNIP_URL: ${{ github.event.inputs.turnip_url }}
         run: |
-          python3 scripts/fetch_turnip.py eden/src/android/app/src/main/assets/kr_drivers
+          mkdir -p ci-logs
+          python3 scripts/fetch_turnip.py eden/src/android/app/src/main/assets/kr_drivers 2>&1 | tee ci-logs/turnip.log
           ls -la eden/src/android/app/src/main/assets/kr_drivers || true
           cat eden/src/android/app/src/main/assets/kr_drivers/SOURCE.txt || true
 
@@ -117,16 +118,18 @@ jobs:
           GIT_TAG_NAME: ${{ steps.pins.outputs.version }}
         run: |
           chmod +x ./gradlew
-          ./gradlew --no-daemon :app:compileMainlineReleaseKotlin
+          set -o pipefail
+          ./gradlew --no-daemon :app:compileMainlineReleaseKotlin 2>&1 | tee "$GITHUB_WORKSPACE/ci-logs/kotlin.log"
 
       - name: Build APK (native core + app)
         working-directory: eden/src/android
         env:
           GIT_TAG_NAME: ${{ steps.pins.outputs.version }}
         run: |
+          set -o pipefail
           ./gradlew --no-daemon assembleMainlineRelease \
             -PYUZU_ANDROID_ARGS="-DUSE_CCACHE=ON" \
-            -Dorg.gradle.workers.max=4
+            -Dorg.gradle.workers.max=4 2>&1 | tee "$GITHUB_WORKSPACE/ci-logs/build.log"
           ccache -s || true
 
       - name: Collect APK
@@ -139,8 +142,11 @@ jobs:
           cp "$APK" "$OUT"
           sha256sum "$OUT" | tee "$OUT.sha256"
           echo "path=$OUT" >> "$GITHUB_OUTPUT"
-          "$ANDROID_HOME/build-tools/36.0.0/aapt2" dump badging "$OUT" | head -5 || true
-          unzip -l "$OUT" | grep -E "lib/arm64-v8a|assets/kr_drivers" || true
+          {
+            "$ANDROID_HOME/build-tools/36.0.0/aapt2" dump badging "$OUT" | head -8
+            unzip -l "$OUT" | grep -E "lib/arm64-v8a|assets/kr_drivers|classes"
+            cat "$OUT.sha256"
+          } 2>&1 | tee ci-logs/apk.txt || true
 
       - uses: actions/upload-artifact@v4
         with:
@@ -171,3 +177,29 @@ jobs:
           else
             gh release create "$TAG" dist/* --title "KR Climax Scramble $TAG" --notes-file notes.md
           fi
+
+      # The CI log blobs are not reachable from every tool, so a compact copy of the
+      # logs is pushed to the orphan branch "ci-logs" (one folder per run).
+      - name: Publish CI logs
+        if: always()
+        run: |
+          mkdir -p ci-logs
+          cd ci-logs
+          for f in *.log; do
+            [ -f "$f" ] || continue
+            grep -nE "error:|e: |FAILED|FAILURE|What went wrong|Exception|\berror\b" "$f" | head -400 > "${f%.log}.errors.txt" || true
+            tail -n 400 "$f" > "${f%.log}.tail.txt"
+            rm -f "$f"
+          done
+          echo "run ${{ github.run_id }} sha ${{ github.sha }} job ${{ job.status }}" > summary.txt
+          cd ..
+          git config user.name "ci-bot"
+          git config user.email "ci-bot@users.noreply.github.com"
+          git fetch -q origin ci-logs:ci-logs 2>/dev/null || true
+          git worktree add -q ../logs-wt ci-logs 2>/dev/null || { git worktree add -q --detach ../logs-wt && (cd ../logs-wt && git checkout -q --orphan ci-logs && git rm -rfq . || true); }
+          rm -rf "../logs-wt/run-${{ github.run_number }}"
+          cp -r ci-logs "../logs-wt/run-${{ github.run_number }}"
+          cd ../logs-wt
+          git add -A
+          git commit -qm "logs run ${{ github.run_number }} (${{ job.status }})" || true
+          git push -q origin ci-logs || true
