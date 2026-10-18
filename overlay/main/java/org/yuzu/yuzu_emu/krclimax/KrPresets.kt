@@ -36,7 +36,7 @@ enum class KrPreset(val prefValue: String) {
 
         fun current(context: Context): KrPreset? {
             val v = PreferenceManager.getDefaultSharedPreferences(context).getString(PREF, null)
-            return entries.firstOrNull { it.prefValue == v }
+            return KrPreset.entries.firstOrNull { it.prefValue == v }
         }
 
         fun apply(context: Context, preset: KrPreset) {
@@ -57,7 +57,7 @@ enum class KrPreset(val prefValue: String) {
             IntSetting.MEMORY_LAYOUT.setInt(0)
 
             when (preset) {
-                PERFORMANCE -> {
+                KrPreset.PERFORMANCE -> {
                     IntSetting.CPU_BACKEND.setInt(1)
                     IntSetting.CPU_ACCURACY.setInt(0)
                     IntSetting.RENDERER_RESOLUTION.setInt(2)
@@ -68,7 +68,7 @@ enum class KrPreset(val prefValue: String) {
                     BooleanSetting.USE_DOCKED_MODE.setBoolean(false)
                     BooleanSetting.RENDERER_REACTIVE_FLUSHING.setBoolean(false)
                 }
-                BALANCED -> {
+                KrPreset.BALANCED -> {
                     IntSetting.CPU_BACKEND.setInt(1)
                     IntSetting.CPU_ACCURACY.setInt(0)
                     IntSetting.RENDERER_RESOLUTION.setInt(3)
@@ -79,7 +79,7 @@ enum class KrPreset(val prefValue: String) {
                     BooleanSetting.USE_DOCKED_MODE.setBoolean(false)
                     BooleanSetting.RENDERER_REACTIVE_FLUSHING.setBoolean(false)
                 }
-                QUALITY -> {
+                KrPreset.QUALITY -> {
                     IntSetting.CPU_BACKEND.setInt(1)
                     IntSetting.CPU_ACCURACY.setInt(0)
                     IntSetting.RENDERER_RESOLUTION.setInt(5)
@@ -90,7 +90,7 @@ enum class KrPreset(val prefValue: String) {
                     BooleanSetting.USE_DOCKED_MODE.setBoolean(true)
                     BooleanSetting.RENDERER_REACTIVE_FLUSHING.setBoolean(true)
                 }
-                COMPATIBILITY -> {
+                KrPreset.COMPATIBILITY -> {
                     // JIT CPU + medium GPU accuracy: slower, but rules out NCE/accuracy
                     // shortcuts when a scene crashes or renders wrong.
                     IntSetting.CPU_BACKEND.setInt(0)

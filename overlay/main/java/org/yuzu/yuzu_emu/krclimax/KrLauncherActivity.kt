@@ -492,7 +492,7 @@ class KrLauncherActivity : AppCompatActivity() {
     private fun choosePreset() {
         val presets = KrPreset.entries
         val labels = presets.map { presetLabel(it) }.toTypedArray()
-        val current = presets.indexOf(KrPreset.current(this))
+        val current = KrPreset.current(this)?.let { presets.indexOf(it) } ?: -1
         MaterialAlertDialogBuilder(this)
             .setTitle(R.string.kr_set_preset)
             .setSingleChoiceItems(labels, current) { dialog, which ->

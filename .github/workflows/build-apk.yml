@@ -108,6 +108,7 @@ jobs:
 
       - name: Gradle settings
         run: |
+          echo "" >> eden/src/android/gradle.properties
           cat >> eden/src/android/gradle.properties <<'EOF'
           org.gradle.jvmargs=-Xmx4g -XX:MaxMetaspaceSize=1g -Dfile.encoding=UTF-8
           EOF
