@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:angle="315" android:startColor="#2A0B0E" android:centerColor="#17191E" android:endColor="#101115" />
+            <corners android:radius="18dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:width="1dp" android:color="#3A1C20" />
+            <corners android:radius="18dp" />
+        </shape>
+    </item>
+    <!-- red accent bar on the left edge -->
+    <item android:width="5dp" android:gravity="start|fill_vertical" android:top="22dp" android:bottom="22dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/kr_red" />
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+</layer-list>

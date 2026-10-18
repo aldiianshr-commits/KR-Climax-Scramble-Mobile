@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="kr_title">KR CLIMAX SCRAMBLE</string>
+    <string name="kr_subtitle">Launcher Android untuk Nintendo Switch NSP / XCI · core Eden</string>
+
+    <string name="kr_play">MAIN</string>
+    <string name="kr_loading">Memeriksa…</string>
+    <string name="kr_game_none">Game belum ditemukan</string>
+    <string name="kr_game_hint_no_folder">Selesaikan langkah persiapan di sebelah kanan.</string>
+    <string name="kr_game_hint_no_keys">Keys belum siap, game terenkripsi belum bisa dibaca.</string>
+    <string name="kr_game_hint_no_file">Salin file .nsp / .xci game ke folder KRiderClimax lalu tekan Pindai Ulang.</string>
+    <string name="kr_game_hint_other">Judul yang ditemukan tidak bernama Climax Scramble. Tekan Pilih Game.</string>
+    <string name="kr_game_detail">Versi %1$s · Update: %2$s · DLC: %3$d</string>
+    <string name="kr_game_program">Program ID %1$s</string>
+    <string name="kr_game_update_none">tidak ada</string>
+    <string name="kr_choose_game">Pilih Game</string>
+    <string name="kr_rescan">Pindai Ulang</string>
+    <string name="kr_advanced">Mode Lanjutan</string>
+
+    <string name="kr_section_setup">PERSIAPAN</string>
+    <string name="kr_section_settings">PENGATURAN</string>
+
+    <string name="kr_step_storage">Izin penyimpanan</string>
+    <string name="kr_step_storage_ok">Akses semua file aktif · /storage/emulated/0/KRiderClimax</string>
+    <string name="kr_step_storage_need">Dibutuhkan untuk membuat folder KRiderClimax dan menyimpan save.</string>
+    <string name="kr_step_folder">Folder game KRiderClimax</string>
+    <string name="kr_step_folder_ok">Folder diizinkan · dipindai termasuk subfolder Updates</string>
+    <string name="kr_step_folder_need">Pilih folder KRiderClimax lalu tekan \"Gunakan folder ini\".</string>
+    <string name="kr_step_keys">Keys (prod.keys)</string>
+    <string name="kr_step_keys_ok">prod.keys terbaca</string>
+    <string name="kr_step_keys_missing">Taruh prod.keys dari Switch Anda di KRiderClimax/keys/</string>
+    <string name="kr_step_keys_invalid">prod.keys ada tetapi tidak valid / tidak lengkap</string>
+    <string name="kr_step_firmware">Firmware (opsional)</string>
+    <string name="kr_step_firmware_ok">Terpasang · versi %1$s</string>
+    <string name="kr_step_firmware_ready">File firmware ada di KRiderClimax/firmware/, belum dipasang</string>
+    <string name="kr_step_firmware_none">Tidak terpasang. Sebagian game butuh firmware (font/applet).</string>
+    <string name="kr_step_updates">Update / DLC</string>
+    <string name="kr_step_updates_detail">%1$d file di KRiderClimax/Updates (dimuat otomatis)</string>
+    <string name="kr_step_updates_none">Kosong. Taruh .nsp update di KRiderClimax/Updates/</string>
+    <string name="kr_step_saves">Data save</string>
+    <string name="kr_step_saves_ok">KRiderClimax/saves/</string>
+    <string name="kr_step_saves_fail">Gagal mengatur folder save</string>
+    <string name="kr_step_driver">Driver GPU</string>
+    <string name="kr_step_driver_detail">%1$s · GPU %2$s</string>
+
+    <string name="kr_action_grant">Izinkan</string>
+    <string name="kr_action_choose">Pilih</string>
+    <string name="kr_action_check">Cek</string>
+    <string name="kr_action_install">Pasang</string>
+    <string name="kr_action_install_nand">Pasang ke NAND</string>
+    <string name="kr_action_open">Buka</string>
+    <string name="kr_action_change">Ganti</string>
+
+    <string name="kr_set_preset">Preset Performa</string>
+    <string name="kr_set_graphics">Grafis Lanjutan</string>
+    <string name="kr_set_gamepad">Kontrol Gamepad</string>
+    <string name="kr_set_touch">Edit Kontrol Sentuh</string>
+    <string name="kr_set_overlay">Tampilan Kontrol Sentuh</string>
+    <string name="kr_set_audio">Audio</string>
+    <string name="kr_set_system">Sistem &amp; Bahasa</string>
+    <string name="kr_set_logs">Ekspor Log</string>
+    <string name="kr_preset_current">Preset aktif: %1$s</string>
+
+    <string name="kr_preset_performance">Performa — 0.75x (540p) + FSR, NCE</string>
+    <string name="kr_preset_balanced">Seimbang — 1x (720p), NCE (disarankan)</string>
+    <string name="kr_preset_quality">Kualitas — 1.5x docked (1620p), FXAA</string>
+    <string name="kr_preset_compat">Kompatibilitas — JIT CPU, akurasi GPU sedang</string>
+    <string name="kr_preset_applied">Preset diterapkan</string>
+
+    <string name="kr_driver_system">Driver sistem (Qualcomm)</string>
+    <string name="kr_driver_title">Pilih driver GPU</string>
+    <string name="kr_driver_not_adreno">GPU ini tidak mendukung driver kustom (bukan Adreno). Driver sistem dipakai.</string>
+    <string name="kr_driver_selected">Driver dipilih: %1$s</string>
+
+    <string name="kr_folder_wrong">Folder yang dipilih bukan /storage/emulated/0/KRiderClimax. Folder tetap dipakai, tetapi save/keys/update tetap dibaca dari KRiderClimax.</string>
+    <string name="kr_firmware_installing">Memasang firmware</string>
+    <string name="kr_firmware_done">Firmware terpasang: %1$s</string>
+    <string name="kr_firmware_failed">Gagal memasang firmware: %1$s</string>
+    <string name="kr_firmware_needed">Game ini membutuhkan firmware Switch. Lanjutkan tanpa firmware?</string>
+    <string name="kr_keys_needed">prod.keys belum valid. Taruh prod.keys hasil dump Switch Anda di KRiderClimax/keys/ lalu tekan Cek.</string>
+    <string name="kr_logs_saved">Log disimpan di %1$s</string>
+    <string name="kr_logs_none">Belum ada log. Jalankan game dulu.</string>
+    <string name="kr_no_updates">Tidak ada file .nsp di KRiderClimax/Updates</string>
+    <string name="kr_install_nand_info">Update di folder Updates sudah dimuat otomatis tanpa dipasang. Memasang ke NAND menyalin update ke penyimpanan internal emulator (permanen, butuh ruang tambahan). Lanjutkan?</string>
+    <string name="kr_continue">Lanjutkan</string>
+    <string name="kr_cancel">Batal</string>
+    <string name="kr_ok">OK</string>
+    <string name="kr_footer">Tidak ada game, keys, atau firmware yang disertakan. Gunakan dump dari kartrid dan konsol milik Anda sendiri.</string>
+</resources>

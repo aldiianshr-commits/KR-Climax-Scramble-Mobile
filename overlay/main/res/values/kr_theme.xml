@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="kr_bg">#0E0F12</color>
+    <color name="kr_surface">#17191E</color>
+    <color name="kr_surface_hi">#20232A</color>
+    <color name="kr_outline">#2E323B</color>
+    <color name="kr_text">#F2F3F5</color>
+    <color name="kr_text_dim">#9AA0AB</color>
+    <color name="kr_red">#E0252F</color>
+    <color name="kr_red_dark">#8E1219</color>
+    <color name="kr_amber">#FFB020</color>
+    <color name="kr_ok">#3DDC84</color>
+    <color name="kr_warn">#FFB020</color>
+    <color name="kr_bad">#FF5A5F</color>
+
+    <style name="Theme.KrClimax" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/kr_red</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">@color/kr_red_dark</item>
+        <item name="colorOnPrimaryContainer">#FFFFFF</item>
+        <item name="colorSecondary">@color/kr_amber</item>
+        <item name="colorOnSecondary">#1A1200</item>
+        <item name="colorSurface">@color/kr_surface</item>
+        <item name="colorOnSurface">@color/kr_text</item>
+        <item name="colorOutline">@color/kr_outline</item>
+        <item name="android:colorBackground">@color/kr_bg</item>
+        <item name="android:windowBackground">@color/kr_bg</item>
+        <item name="android:statusBarColor">@color/kr_bg</item>
+        <item name="android:navigationBarColor">@color/kr_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="KrSectionLabel">
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.18</item>
+        <item name="android:textColor">@color/kr_text_dim</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="KrTile" parent="Widget.Material3.Button.TonalButton">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="backgroundTint">@color/kr_surface_hi</item>
+        <item name="android:textColor">@color/kr_text</item>
+        <item name="iconTint">@color/kr_amber</item>
+        <item name="iconPadding">12dp</item>
+    </style>
+</resources>

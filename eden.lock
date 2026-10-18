@@ -1,0 +1,4 @@
+# Pinned emulation core (Eden, GPL-3.0). Change these together and re-run CI.
+EDEN_REPO=https://github.com/eden-emulator/mirror
+EDEN_REF=v0.2.1
+EDEN_COMMIT=58c1e20ee58efa3900ba616207d460886214480b
