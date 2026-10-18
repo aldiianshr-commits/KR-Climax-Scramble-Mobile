@@ -1,0 +1,4 @@
+34:FAILURE: Build completed with 2 failures.
+38:* What went wrong:
+51:* What went wrong:
+70:BUILD FAILED in 1m 15s
