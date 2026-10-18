@@ -1,0 +1,103 @@
+Downloading https://services.gradle.org/distributions/gradle-8.13-bin.zip
+..................................................................................................................................
+Unzipping /home/runner/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13-bin.zip to /home/runner/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d
+Set executable permissions for: /home/runner/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13/bin/gradle
+
+Welcome to Gradle 8.13!
+
+Here are the highlights of this release:
+ - Daemon JVM auto-provisioning
+ - Enhancements for Scala plugin and JUnit testing
+ - Improvements for build authors and plugin developers
+
+For more details see https://docs.gradle.org/8.13/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.13/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/build.gradle.kts:12:24: 'getter for buildDir: File!' is deprecated. Deprecated in Java
+
+> Configure project :app
+WARNING: The option setting 'android.defaults.buildfeatures.buildconfig=true' is deprecated.
+The current default is 'false'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+To keep using this feature, add the following to your module-level build.gradle files:
+    android.buildFeatures.buildConfig = true
+or from Android Studio, click: `Refactor` > `Migrate BuildConfig to Gradle Build Files`.
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/build.gradle.kts:8:37: 'ApplicationVariant' is deprecated. Deprecated in Java
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/build.gradle.kts:302:5: 'disabledRules: SetProperty<String>' is deprecated. not supported with ktlint 0.48+
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/build.gradle.kts:302:5: 'disabledRules: SetProperty<String>' is deprecated. not supported with ktlint 0.48+
+
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preMainlineReleaseBuild UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsMainlineRelease
+> Task :app:generateMainlineReleaseResValues
+> Task :app:extractMainlineReleaseSupportedLocales
+> Task :app:generateMainlineReleaseLocaleConfig
+> Task :app:generateMainlineReleaseResources
+> Task :app:packageMainlineReleaseResources
+> Task :app:generateMainlineReleaseBuildConfig
+> Task :app:mergeMainlineReleaseResources
+> Task :app:parseMainlineReleaseLocalResources
+> Task :app:generateSafeArgsMainlineRelease
+> Task :app:dataBindingGenBaseClassesMainlineRelease
+> Task :app:mapMainlineReleaseSourceSetPaths
+> Task :app:checkMainlineReleaseAarMetadata
+> Task :app:createMainlineReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksMainlineRelease
+> Task :app:processMainlineReleaseMainManifest
+> Task :app:processMainlineReleaseManifest
+> Task :app:processMainlineReleaseManifestForPackage
+> Task :app:processMainlineReleaseResources
+> Task :app:compileMainlineReleaseKotlin
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/NativeLibrary.kt:373:13 Variable 'Success' is never used
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/NativeLibrary.kt:374:13 Variable 'ErrorNotInitialized' is never used
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/NativeLibrary.kt:375:13 Variable 'ErrorGetLoader' is never used
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/NativeLibrary.kt:376:13 Variable 'ErrorSystemFiles' is never used
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/NativeLibrary.kt:377:13 Variable 'ErrorSharedFont' is never used
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/NativeLibrary.kt:379:13 Variable 'ErrorUnknown' is never used
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/NativeLibrary.kt:380:13 Variable 'ErrorLoader' is never used
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/applets/keyboard/SoftwareKeyboard.kt:36:35 Parameter 'config' is never used
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/applets/keyboard/SoftwareKeyboard.kt:44:58 'SHOW_FORCED: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/dialogs/ChatDialog.kt:72:55 Parameter 'type' is never used, could be renamed to _
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/dialogs/ChatDialog.kt:72:61 Parameter 'message' is never used, could be renamed to _
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/dialogs/QuickSettings.kt:81:39 Name shadowed: name
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/dialogs/QuickSettings.kt:144:9 Parameter 'isEnabled' is never used
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/features/fetcher/ReleaseAdapter.kt:93:25 Name shadowed: body
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/features/fetcher/ReleaseAdapter.kt:100:25 Name shadowed: body
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/features/settings/model/view/SingleChoiceSetting.kt:37:38 Conditional branch result of type Unit is implicitly cast to Any
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/features/settings/model/view/SingleChoiceSetting.kt:38:39 Conditional branch result of type Unit is implicitly cast to Any
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/features/settings/model/view/SingleChoiceSetting.kt:39:21 Conditional branch result of type Int is implicitly cast to Any
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/features/settings/ui/SettingsFragmentPresenter.kt:532:38 Parameter 'sl' is never used
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/fragments/EditUserDialogFragment.kt:119:34 Type mismatch: inferred type is String? but String was expected
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/fragments/FreedrenoSettingsFragment.kt:101:72 Parameter 'variable' is never used, could be renamed to _
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/fragments/GamePropertiesFragment.kt:541:32 'getLayoutDirection(View): Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/fragments/GamePropertiesFragment.kt:542:32 'LAYOUT_DIRECTION_LTR: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/fragments/SetupFragment.kt:101:34 'setter for navigationBarColor: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/overlay/OverlayScaleDialog.kt:111:17 Variable 'screenHeight' is never used
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/ui/GamesFragment.kt:187:30 Unnecessary safe call on a non-null receiver of type ExtendedFloatingActionButton
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/ui/GamesFragment.kt:553:34 Unnecessary safe call on a non-null receiver of type ExtendedFloatingActionButton
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/ui/main/MainActivity.kt:117:16 'setter for statusBarColor: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/ui/main/MainActivity.kt:119:16 'setter for navigationBarColor: Int' is deprecated. Deprecated in Java
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/ui/main/MainActivity.kt:216:17 Variable 'packageId' is never used
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/updater/APKInstaller.kt:29:13 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/utils/CustomSettingsHandler.kt:334:44 Parameter 'context' is never used
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/utils/NfcReader.kt:66:20 'getParcelableExtra(String!): T?' is deprecated. Deprecated in Java
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/utils/NfcReader.kt:107:34 Type mismatch: inferred type is ByteArray? but Any was expected
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/utils/SerializableHelper.kt:17:13 'getSerializable(String?): Serializable?' is deprecated. Deprecated in Java
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/utils/SerializableHelper.kt:25:13 'getSerializableExtra(String!): Serializable?' is deprecated. Deprecated in Java
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/utils/SerializableHelper.kt:33:13 'getParcelable(String?): T?' is deprecated. Deprecated in Java
+w: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/app/src/main/java/org/yuzu/yuzu_emu/utils/SerializableHelper.kt:41:13 'getParcelableExtra(String!): T?' is deprecated. Deprecated in Java
+
+[Incubating] Problems report is available at: file:///home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/android/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.13/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 2m 46s
+21 actionable tasks: 21 executed

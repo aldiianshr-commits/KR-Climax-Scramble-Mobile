@@ -1,0 +1,31 @@
+28:C/C++: -- [DetectArchitecture] Target architecture: arm64
+82:C/C++: -- Build type: RelWithDebInfo
+234:C/C++:  * OPUS_ASSERTIONS, additional software error checking.
+341:C/C++: -- Oboe: Data conversion is ENABLED.
+423:C/C++: [52/1778] Building CXX object _deps/boost-build/libs/process/CMakeFiles/boost_process.dir/src/error.cpp.o
+891:C/C++: /home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/dynarmic/src/dynarmic/backend/arm64/reg_alloc.cpp:424:24: note: in instantiation of function template specialization 'Dynarmic::Backend::Arm64::RegAlloc::RealizeReadWriteImpl<Dynarmic::Backend::Arm64::HostLoc::Kind::Flags>' requested here
+1449:C/C++: [506/1778] Building CXX object src/common/CMakeFiles/common.dir/error.cpp.o
+1467:C/C++: <command line>:11:9: note: previous definition is here
+1483:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/codecvt:568:28: note: 'codecvt_utf8_utf16<char16_t>' has been explicitly marked deprecated here
+1486:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:982:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+1489:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:955:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+1495:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/locale:3114:28: note: 'wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t>' has been explicitly marked deprecated here
+1498:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:982:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+1501:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:955:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+1507:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/codecvt:568:28: note: 'codecvt_utf8_utf16<char16_t>' has been explicitly marked deprecated here
+1510:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:982:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+1513:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:955:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+1519:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/locale:3114:28: note: 'wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t>' has been explicitly marked deprecated here
+1522:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:982:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+1525:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:955:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+1531:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/codecvt:193:28: note: 'codecvt_utf8<char32_t>' has been explicitly marked deprecated here
+1534:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:982:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+1537:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:955:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+1543:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/locale:3114:28: note: 'wstring_convert<std::codecvt_utf8<char32_t>, char32_t>' has been explicitly marked deprecated here
+1546:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:982:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+1549:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:955:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+1556:C/C++: /home/runner/work/KR-Climax-Scramble-Mobile/KR-Climax-Scramble-Mobile/eden/src/common/string_util.cpp:120:20: note: in instantiation of member function 'std::wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t>::to_bytes' requested here
+1559:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/locale:3114:28: note: 'wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t>' has been explicitly marked deprecated here
+1562:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:982:41: note: expanded from macro '_LIBCPP_DEPRECATED_IN_CXX17'
+1565:C/C++: /usr/local/lib/android/sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config:955:49: note: expanded from macro '_LIBCPP_DEPRECATED'
+1938:C/C++: [744/1778] Building CXX object src/core/CMakeFiles/core.dir/frontend/applets/error.cpp.o

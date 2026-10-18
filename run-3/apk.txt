@@ -1,0 +1,19 @@
+package: name='com.krclimax.scramble' versionCode='34075592' versionName='1.0.0' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'
+minSdkVersion:'29'
+targetSdkVersion:'36'
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.NFC'
+uses-permission: name='android.permission.POST_NOTIFICATIONS'
+uses-permission: name='android.permission.ACCESS_WIFI_STATE'
+  4895744  1981-01-01 01:01   classes.dex
+ 24616200  1981-01-01 01:01   lib/arm64-v8a/libVkLayer_khronos_validation.so
+    10096  1981-01-01 01:01   lib/arm64-v8a/libandroidx.graphics.path.so
+     4000  1981-01-01 01:01   lib/arm64-v8a/libfile_redirect_hook.so
+     4312  1981-01-01 01:01   lib/arm64-v8a/libgsl_alloc_hook.so
+   272408  1981-01-01 01:01   lib/arm64-v8a/libhook_impl.so
+     4216  1981-01-01 01:01   lib/arm64-v8a/libmain_hook.so
+ 35572392  1981-01-01 01:01   lib/arm64-v8a/libyuzu-android.so
+      276  1981-01-01 01:01   assets/kr_drivers/SOURCE.txt
+  3478359  1981-01-01 01:01   assets/kr_drivers/turnip.zip
+f55157ed1527bae68f70f5683e47a069b8fd870bba8c9e59896de9dc3c9701b8  dist/KR-Climax-Scramble-1.0.0-arm64.apk
